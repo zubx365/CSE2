@@ -54,6 +54,7 @@ public class Cyclometer{
             distanceTrip2=(countsTrip2*wheelDiameter*PI)/(inchesPerFoot*feetPerMile);
             //Calculates total distance for Trip 1 + Trip 2
             totalDistance= distanceTrip1+distanceTrip2;
+            
             //Print out the output data.
             
             //Distance of Trip 1
