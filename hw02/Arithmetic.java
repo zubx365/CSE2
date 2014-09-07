@@ -8,6 +8,7 @@ This program takes the number of items bought at a Walmart
 in PA and calculates the...
 Total Cost of each kind of item and sales tax for each respective cost
 Total cost of purchases before tax
+Total sales tax
 Total actually paid for the transaction including sales tax
 */
 
