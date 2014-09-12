@@ -16,6 +16,8 @@ public class WelcomeClass{
         System.out.println(" \\ /\\ /\\ /\\ /\\ /\\ / ");
         System.out.println("  v  v  v  v  v  v");
         System.out.println("I like cats and Counter-Strike.");
+        
+        System.out.println(3 + 2);
     }
     
 }
