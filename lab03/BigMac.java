@@ -28,7 +28,7 @@ public class BigMac{
     myScanner = new Scanner(System.in);
     
     //DecimalFormat Constructor; format double to .XX
-    DecimalFormat decF = new DecimalFormat("#.##");
+    DecimalFormat decF = new DecimalFormat("0.00");
     
     //Variables
     double cost$; //cost of purchase
