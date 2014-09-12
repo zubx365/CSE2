@@ -13,6 +13,8 @@ It then displays the total cost.
 
 //import Scanner Class
 import java.util.Scanner;
+//import DecimalFormat Class
+import java.text.DecimalFormat;
 
 //Big Mac Class
 public class BigMac{
@@ -24,6 +26,9 @@ public class BigMac{
     Scanner myScanner;
     //Scanner constructor
     myScanner = new Scanner(System.in);
+    
+    //DecimalFormat Constructor; format double to .XX
+    DecimalFormat decF = new DecimalFormat("#.##");
     
     //Variables
     double cost$; //cost of purchase
@@ -45,9 +50,9 @@ public class BigMac{
     System.out.print("Enter the percent tax as a whole number (xx): "); 
     double taxRate = myScanner.nextDouble();//takes input and places double into taxRate
     
-    taxRate/=100; //user enters a percent, but I want a proportion
+    taxRate/=100; //user enters a whole number percent, but I want a proportion
     
-    //gets the whole amount, dropping decimal fraction 
+    //gets the total cost including tax, dropping decimal fraction 
     cost$ = nBigMacs * bigMac$ * (1+taxRate);
     
     dollars = (int)cost$;//cast cost to int
@@ -59,10 +64,11 @@ public class BigMac{
     dimes = (int)(cost$ * 10) % 10;
     pennies = (int)(cost$ * 100) %10; 
     
+        //outputs total cost of nBigMacs at cost$, plus sales tax 
         System.out.println("The total cost of " + nBigMacs + 
-        " BigMacs, at $" + bigMac$ + " per BigMac, with a" + 
+        " BigMacs, at $" + decF.format(bigMac$) + " per BigMac, with a" + 
         " sales tax of " + (int)(taxRate*100) +
-        "% sales is $" + dollars + '.' + dimes + pennies + '.');
+        "%, is $" + dollars + '.' + dimes + pennies + '.');
     
     }//end main method
 }//end class
