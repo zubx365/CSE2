@@ -21,15 +21,14 @@ public class FourDigits{
         Scanner myScanner = new Scanner(System.in);
         
         //variables
-        double deci=0.0;
+        double deci=0.0; //stores the 4 digits after the decimal point after manipulation
         
         //gets input from user for the double number to use
         System.out.print("Enter a double (XX.XXXX) and I display the four digits to the right of the decimal point: ");
         double num1 = myScanner.nextDouble();
         
         //manipulates the input to get 4 digits after the deicmal point
-        
-        deci = (num1 * 10000) % ((int)num1 * 10000);
+        deci = (int)(num1 * 10000) % (10000);
         
         //output 4 decimal digits
         System.out.println("The four digits are: " + (int)deci + '.');

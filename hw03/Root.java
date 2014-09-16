@@ -22,21 +22,33 @@ public class Root{
         Scanner myScanner = new Scanner(System.in);
         
         //variables
-        double root = 0.0;
+        double guess = 0.0; //estimated cube root of user input
         
         //takes input for number whos root is to be estimated
         System.out.print("Please enter your number as a double (xx.xx) to take the cube root of: ");
         double myVal = myScanner.nextDouble();
         
-        //calculate root
-        root = myVal/3;
-        
         //calculate guess
-        double guess = (6*(root * root * root) + myVal)/(18.1 * (root * root));
+        guess = myVal/3;
         
+        //calculate guess 4 times to increase accuracy
+        double root = (2*(guess * guess * guess) + myVal)/(3 * (guess * guess));
+        guess = root;
+        
+        root = (2*(guess * guess * guess) + myVal)/(3 * (guess * guess));
+        guess = root;
+        
+        root = (2*(guess * guess * guess) + myVal)/(3 * (guess * guess));
+        guess = root;
+        
+        root = (2*(guess * guess * guess) + myVal)/(3 * (guess * guess));
+        guess = root;
+        
+        root = (2*(guess * guess * guess) + myVal)/(3 * (guess * guess));
+        guess = root;
         //output guess
-        System.out.println("The cube root of " + myVal + " is " + guess + '.');
-        System.out.println(guess + " cubed is " + (guess*guess*guess) + '.');
+        System.out.println("The cube root of " + myVal + " is " + root + '.');
+        System.out.println(root + " cubed is " + (root*root*root) + '.');
         
     }//end main method
 }//end class
