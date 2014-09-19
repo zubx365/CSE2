@@ -50,14 +50,17 @@ public class BigMacAgain{
         //take user order for number of big macs
         //verifies input is an int otherwise, program will terminate
         System.out.print("Enter the number of Big Macs @$2.22 per Big Mac (an integer > 0): ");
+        
         if(myScanner.hasNextInt()){
             nBigMacs = myScanner.nextInt();//takes number of big macs entered stored in nBigMacs
             }//end if1
+            
             else{
                 System.out.println("You did not enter an integer."); //error message not int entered terminates program
                 return;
             }//end else in if1
             //checks int is > 0
+            
             if(nBigMacs > 0){
                 //calculate cost of big macs
                 cost$ = nBigMacs * bigMacCost$ * (1+taxRate);
@@ -66,11 +69,14 @@ public class BigMacAgain{
                 System.out.println("You ordered " + nBigMacs + " Big Macs for a cost of: " + nBigMacs + " * " +
                 bigMacCost$ + " = $" + decF.format(cost$));                                      //output big mac order
             }//end int > 0 if
+            
                 else{
                     System.out.println("You must enter a NUMBER greater than 0!!"); //error message int <0 terminates program
                     return;
                 }//end else nBigMacs if
+                
             System.out.print("Would you like to order fries @ $2.15 per order? (Y/y/N/n) ");
+            
             if(myScanner.hasNext()){                                   //tests for string
                 answer = myScanner.next();                   //answer scanner object to take next string
                 }//end fries if 2
@@ -87,13 +93,8 @@ public class BigMacAgain{
                  else{
                      System.out.println("You did not enter (Y/y/N/n).");//error message from wrong char input terminates program
                      return;
-                 }//end fries if else   
-                
-                
-           
-            
-        
-        
+                    }//end fries if else   
+                    
     }//end main
     
 }//end class
