@@ -1,7 +1,7 @@
 //Matthew Chin
 //Date: 9/19/2014
 //Course Information: CSE002-110
-//Lab 03 Big Mac Again Program
+//Lab 04 Big Mac Again Program
 
 /*
 This program  uses the Scanner class to obtain from users 
