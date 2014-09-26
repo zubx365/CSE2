@@ -69,12 +69,12 @@ public class RandomGames{
                 
             }//end roulette if
             
-            if(choice.toUpperCase().equals("C")){
+            if(choice.toUpperCase().equals("C")){   //if user chooses C,c for craps implement later
                 System.out.println("This option to play Craps will be implemented later.");
                 return;
             }//end Craps if
             
-            if(choice.toUpperCase().equals("P")){
+            if(choice.toUpperCase().equals("P")){   //if user chooses P,p for pick a card implement later
                 System.out.println("This option to pick a card will be implemented later.");
                 return;
             }//end pick a card if
@@ -86,7 +86,7 @@ public class RandomGames{
             }
         else if(choice.toUpperCase().charAt(0) != 'R' && choice.toUpperCase().charAt(0) != 'C' && choice.toUpperCase().charAt(0) != 'P'){ //error character does not match R,r for roulette,craps, or pick a card option
             
-            System.out.println(choice + " is not a valid option (R,r, C,c, P,p)");
+            System.out.println(choice + " is not a valid option (R,r, C,c, P,p)");  //error message
             return;
         
         }//end else if
