@@ -82,28 +82,28 @@ public class BoolaBoola{
                                             //operators will be || for 0 or && for 1
             d = (a  ||  b  ||  c);
             //output question in format (a + result4 + b + result5 + c) where result4 and result5 is either || or &&
-            System.out.println("Does " + a + " " + "||" +  " " + b + " " + "||" + " " + c + ": have the value of (T/t) or (F/f)?");
+            System.out.println("Does " + a + " " + "||" +  " " + b + " " + "||" + " " + c + ": have the value of True(T/t) or False(F/f)?");
         }//end if result4 == 0 && result5 == 0
         
         if(result4 == 0 && result5 == 1){   //if statement to check what the value of result4 and 5 are corresponding to whether the comparison
                                             //operators will be || for 0 or && for 1
             d = (a || b && c);
             //output question in format (a + result4 + b + result5 + c) where result4 and result5 is either || or &&
-            System.out.println("Does " + a + " " + "||" +  " " + b + " " + "&&" + " " + c + ": have the value of (T/t) or (F/f)?");
+            System.out.println("Does " + a + " " + "||" +  " " + b + " " + "&&" + " " + c + ": have the value of True(T/t) or False(F/f)?");
         }//end if result4 == 0 && result 5 == 1
         
         if(result4 == 1 && result5 == 0){   //if statement to check what the value of result4 and 5 are corresponding to whether the comparison
                                             //operators will be || for 0 or && for 1
             d = (a && b || c);
             //output question in format (a + result4 + b + result5 + c) where result4 and result5 is either || or &&
-            System.out.println("Does " + a + " " + "&&" +  " " + b + " " + "||" + " " + c + ": have the value of (T/t) or (F/f)?");
+            System.out.println("Does " + a + " " + "&&" +  " " + b + " " + "||" + " " + c + ": have the value of True(T/t) or False(F/f)?");
         }//end if result4 == 1 && result5 == 0
         
         if(result4 == 1 && result5 == 1){   //if statement to check what the value of result4 and 5 are corresponding to whether the comparison
                                             //operators will be || for 0 or && for 1
             d = (a && b && c);
             //output question in format (a + result4 + b + result5 + c) where result4 and result5 is either || or &&
-            System.out.println("Does " + a + " " + "&&" +  " " + b + " " + "&&" + " " + c + ": have the value of (T/t) or (F/f)?");
+            System.out.println("Does " + a + " " + "&&" +  " " + b + " " + "&&" + " " + c + ": have the value of True(T/t) or False(F/f)?");
         }//end if result 4 == 1 && result5 == 1
         
         if(myScanner.hasNext()){    //checks if Scanner input is a String
