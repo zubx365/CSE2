@@ -63,7 +63,7 @@ public class BigMacAgain{
             
             if(nBigMacs > 0){
                 //calculate cost of big macs
-                cost$ = nBigMacs * bigMacCost$ * (1+taxRate);
+                cost$ = nBigMacs * bigMacCost$;
                 //calculates total cost plus fries
                 cost2$ = ((nBigMacs*bigMacCost$) + (friesCost$)) * (1+taxRate);
                 System.out.println("You ordered " + nBigMacs + " Big Macs for a cost of: " + nBigMacs + " * " +

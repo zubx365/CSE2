@@ -23,6 +23,12 @@ public class Test{
         int hours = (secs/3600)%60;
         System.out.println("hours " + hours);
         */
+        
+double a = 2.54;
+double b = 3.14;
+double c = 4.13; 
+boolean x = a <= b <= (boolean)--c;
+
     }//end main
     
 }//end class
