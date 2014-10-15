@@ -33,22 +33,20 @@ public class Root{
             
             high = 1 + myNum;   //sets the high interval by adding 1 to x
             middle = (high + low) / 2;  //sets the middle interval between high and low by taking average
-            System.out.println(middle);
-            double y = (high - low);
-            double z = (0.0000001*(1+myNum));
+            //System.out.println(middle);
+            
+            double y = (high - low); //vars to simplify while conditional expression
+            double z = (0.0000001*(1+myNum)); //vars to simplify while conditional expression
             
             while(y > z){  //while condition run loop until difference between high and low is less than 0.0000001*(1+myNum)
             
+            middle = (high + low)/2;
+            
             if(Math.pow(middle, 2.0) > myNum){  //if the middle value squared is greater than myNum that value is now the high value of the interval
                 high = Math.pow(middle, 2.0); //assigns the value to the high value of the interval if it squared is greater than myNum\
-                middle = (high + low)/2;
-                   
             }// end if
             else{                               //else the value was less than myNum and is now the low of the interval
-              
                 low = Math.pow(middle, 2.0);
-                middle = (high + low)/2;
-                
             }//end else
     
         }//end while
