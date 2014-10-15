@@ -28,8 +28,15 @@ public class Root{
         System.out.println("Enter a double value: ");   //asks user for a double to get the square root of
         
         if(myScanner.hasNextDouble()){  //checks if input is a double
-            
+        
             myNum = myScanner.nextDouble(); //sets myNum to input 
+            
+            if(myNum == 0){                        //checks if the input is 0, if it is prints error
+            System.out.println("Enter a positive int");
+            return;
+            }//end if
+            
+            
             
             high = 1 + myNum;   //sets the high interval by adding 1 to x
             middle = (high + low) / 2;  //sets the middle interval between high and low by taking average
@@ -38,7 +45,7 @@ public class Root{
             double y = (high - low); //vars to simplify while conditional expression
             double z = (0.0000001*(1+myNum)); //vars to simplify while conditional expression
             
-            while(y > z){  //while condition run loop until difference between high and low is less than 0.0000001*(1+myNum)
+            for(int i = 0; i <=(1*(0.0000001)); i++){  //while condition run loop until difference between high and low is less than 0.0000001*(1+myNum)
             
             middle = (high + low)/2;
             
@@ -49,14 +56,12 @@ public class Root{
                 low = Math.pow(middle, 2.0);
             }//end else
     
-        }//end while
+        }//end for
             
             System.out.println("The square root of: " + myNum + " is " + middle);   //output the square root of the double inputted by user
             
         }//end if
-        else if(myNum == 0){                        //checks if the input is 0, if it is prints error
-            System.out.println("Enter a positive int");
-        }
+        
         else{                                       //handles all other errors such as string or char input
             System.out.println("Error not a Double");
         }//end else    
