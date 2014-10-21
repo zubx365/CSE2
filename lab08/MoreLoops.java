@@ -1,29 +1,53 @@
+
 import java.util.Scanner;
-public class Test{
+public class MoreLoops{
     public static void main(String[] arg){
 	Scanner scan=new Scanner(System.in);
 	int n=0;
-	int k=4;
-
+    int k=4;
+    
+    /*
 	System.out.print("Enter an int- ");
 	while(!scan.hasNextInt()){
 	    scan.next(); //get rid of the junk entered by user
 	    System.out.print("You did not enter an int; try again- ");
 	}
+	*/
+	System.out.print("Enter an int- ");
+	
+	do{
+	    scan.next();
+	    System.out.print("You did not enter an int; try again- ");
+	    
+	}while(!scan.hasNextInt());
 	//COMMENT OUT THE ABOVE 5 LINES AND REPLACE THE CODE WITH A 
 	//DO-WHILE LOOP
-        n=scan.nextInt();
+	
+     n=scan.nextInt();  
 
+    /*
 	for(int j=0;j<n && j<40;j++){
 	    for(int k=0;k<j+1;k++){
 		System.out.print('*');
 	    }
 	    System.out.println();
 	}
+	*/
+	int j = 0;
+    k = 0;
+	while(j < n && j<40){j++;
+	    
+	    while(k < j+1){k++;
+	        
+	        System.out.print('*');
+	    }
+	    System.out.println();
+	
+	}
 	//COMMENT OUT THE ABOVE SIX LINES OF CODE AND REPLACE WITH 
 	//WHILE STATEMENTS
       
-	int k=4;
+	//int k=4;
 
 	do{
 	    System.out.println("k="+k);
