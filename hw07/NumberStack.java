@@ -22,27 +22,31 @@ public class NumberStack{
             //assign input to the user input value
             input = myScanner.nextInt();
             
-            if(input >= 1 && input <= 9){
+            if(input >= 1 && input <= 9){ //checks if the input is within [1,9] otherwise it prints out an error message
                 
         System.out.println();
         System.out.println("Using For Loops.");
         System.out.println();
         
-        for(int group = 1; group <= input; group++){ //splits the output into groups of stacks        
+        //for(int group = 1; group <= input; group++){ //splits the output into groups of stacks        
               
             for(rowNum = 1 ; rowNum <= input; rowNum++){    //controls number of rows that is outputted per stack
-            
-                System.out.println("-");
                 
-                for(numPattern = 1; numPattern <= rowNum; numPattern++){
+                for(numPattern = input; numPattern > rowNum; numPattern--){ //controls the number pattern hence printing out the row number with each run
+                    
+                    System.out.print(" ");
+                }//end inner loop   
+                
+                    for(int column =1; column < (2*rowNum); column++){
                     
                     System.out.print(rowNum);
+
+                    }//end column loop
                     
-                }//end inner loop
-            System.out.println();    
+                    System.out.println();
 
             }//endouterloop
-        }//end grouploop    
+        //}//end grouploop    
             
             }//end if
             
