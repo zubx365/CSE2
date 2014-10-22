@@ -24,23 +24,25 @@ public class NumberStack{
             
             if(input >= 1 && input <= 9){
                 
-            for(rowNum = 1 ; rowNum <= input; rowNum++){
+        System.out.println();
+        System.out.println("Using For Loops.");
+        System.out.println();
+        
+        for(int group = 1; group <= input; group++){ //splits the output into groups of stacks        
+              
+            for(rowNum = 1 ; rowNum <= input; rowNum++){    //controls number of rows that is outputted per stack
+            
+                System.out.println("-");
                 
                 for(numPattern = 1; numPattern <= rowNum; numPattern++){
                     
-                    System.out.print(numPattern);
-                
-                    for(dashPattern = 1; dashPattern <= rowNum; dashPattern++){
-                    
-                    //System.out.print('-');    
-                    
-                    }//end middle loop
+                    System.out.print(rowNum);
                     
                 }//end inner loop
             System.out.println();    
 
             }//endouterloop
-            
+        }//end grouploop    
             
             }//end if
             
@@ -55,5 +57,48 @@ public class NumberStack{
                 return;
         
         }//end else if
+    
+    //while loop number stack
+    
+    System.out.println();
+    System.out.println("Using While Loops");
+    System.out.println();
+    
+    int whileGroup = 1;
+    
+    while(whileGroup <= input){
+    
+    int whileRowNum = 1;
+    
+    while(whileRowNum <= input){
+        
+        int whileCounter = 1;
+        
+        while(whileCounter <= whileRowNum){
+            System.out.print(whileRowNum);  
+            whileCounter++;
+        }
+        System.out.println();
+        whileRowNum++;
+        
+    }//end while row
+    whileGroup++;
+    }//end while group
+    
+    
+    //do while loop number stack
+    
+    System.out.println();
+    System.out.println("Using Do While Loops");
+    System.out.println();
+    
+    int doRow = 1;
+    int doNum = 1;
+    do{
+        System.out.print(doNum);
+        System.out.println();
+        doNum++;
+    }while(doNum <= doRow); //end do while
+    doRow++;
     }//end main
 }//end class
