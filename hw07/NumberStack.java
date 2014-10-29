@@ -37,8 +37,8 @@ public class NumberStack{
                     System.out.print(" ");
                 }//end inner loop   
                 
-                    for(int column =1; column < (2*rowNum); column++){
-                    
+                    for(int column =1; column < (2*rowNum); column++){  //controls columns of numbers produces odd numbers because of 2*rowNum and is bounded
+                                                                        //by being greater than column, thus always being rowNum-1 as the for loop progresses
                     System.out.print(rowNum);
 
                     }//end column loop

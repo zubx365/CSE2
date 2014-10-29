@@ -34,9 +34,9 @@ public class MoreLoops{
 	}
 	*/
 	int j = 0;
-    k = 0;
+ 
 	while(j < n && j<40){j++;
-	    
+	    k=1;
 	    while(k < j+1){k++;
 	        
 	        System.out.print('*');
