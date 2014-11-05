@@ -4,7 +4,7 @@
 //Homework 08 Overloaded Methods Program
 /*
 This program uses three overloaded methods to get various input from the user and outputs what they entered
-if it meets the criteria of being one character long, and matches the predefined characters.
+if it meets the criteria of being one character long, and matches one of the predefined characters.
 Standard input is provided initially for tests
 NoteToSelf: added loops that should handle any length of string input and still reliably
 test each character..
