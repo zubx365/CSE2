@@ -9,7 +9,7 @@ public class BlockedAgain {
             //force user to enter int in range 1-9, inclusive.
             m = getInt(); //assigns value of getInt() to m'
             //prints out block design based on int
-            allBlocks(m);
+            //allBlocks(m);
         }
         //getInt() method
         //while loop structure that continues to run until acceptable input is taken
@@ -28,16 +28,16 @@ public class BlockedAgain {
                 //while loop
 
                 done = 0; //ensures while loop continues with value of 0
-
+                
+                return 0;
+                
             } //end else if
 
             if (rangeCheck == true) { //ensures while loop ends if rangeCheck returns a true value, done = 1
                 done = 1;
             }
         } //end while
-
-        return 1; //return value for getInt() method
-
+        return 0;
     }
 
     //checkInt() method that takes user input and then confirms input is an int
@@ -77,12 +77,33 @@ public class BlockedAgain {
         }
 
     }
-
+    /*
     //allBlocks() method that will take the int value from user input and output a block of numbers and dashes 
     //based on int
-    public static void allBlocks(int a) {
+    public static void allBlocks(int x) {
         
-
+        String out = "";
+        for (int i = 1; i <= x; i ++){
+            
+            out = out + 1;
+            
+            for(int k = 1; k <= i; k ++){
+                System.out.print(out);
+            }
+            System.out.println();
+        }
         return;
     }
+
+    public static void block(){
+        
+        return;
+    }
+    
+    public static void line(){
+    
+        return;
+    }
+    */
+    
 }
