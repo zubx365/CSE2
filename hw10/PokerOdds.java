@@ -12,11 +12,13 @@ public class PokerOdds {
         
         int cards[] = new int[52];
         
-        
+        return 1;
     }//end showHands method
     
     public static int simulateOdds(){
         
         
-    }
+        return 1;
+    }//end simulateOdds method
+    
 }   //end class
