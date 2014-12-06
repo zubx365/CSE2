@@ -1,4 +1,6 @@
-//import Scanner class
+//DONE
+//
+//****************
 import java.util.Scanner;
 
 public class Methods {
@@ -11,6 +13,10 @@ public class Methods {
         a = getInt(scan);
         b = getInt(scan);
         c = getInt(scan);
+
+        System.out.println("" + a + b + c);
+
+
         System.out.println("The larger of " + a + " and " + b + " is " + larger(a, b));
         System.out.println("The larger of " + a + ", " + b + ", and " + c +
             " is " + larger(a, larger(b, c)));
@@ -18,40 +24,56 @@ public class Methods {
 
     }
 
-    public static Scanner getInt(int a) {
-        Scanner myScan = new Scanner(System.in);
-        int pass = 0;
-        while (pass == 0) {
+    public static int getInt(Scanner a) {
+            a = new Scanner(System.in);
+            int d = 0;
 
-            if (myScan.hasNextInt()) {
-                a = myScan.nextInt();
-                pass = 1;
-                return a;
+
+            if (a.hasNextInt()) {
+                d = a.nextInt();
+                return d;
             }
-            else {
-                System.out.println("Please enter an integer: ");
-                pass = 0;
-                return 0;
+
+            else if (a.hasNext()) {
+                System.out.println("You did not enter an int; try again-");
+                while (!a.hasNextInt()) {
+                    a.next();
+                    d = a.nextInt();
+                    return d;
+                } //while
             }
-            
-        }
-    }
+            return d;
+        } //end getInt method
+
+
 
     public static int larger(int a, int b) {
-        int x = 0;
-        if (a > b) {
-            return a;
-        }
-        else if (b > a) {
-            return b;
-        }
-    }
+            int temp = 0;
+            if (a > b) {
+                temp = a;
+            }
+            else if (b > a) {
+                temp = b;
+            }
+            return temp;
+        } //end larger method
 
     public static boolean ascending(int a, int b, int c) {
-        
-        boolean ascending;
-        
-        
-        
-    }
+
+            boolean ascending;
+
+            if (a < b && b < c) {
+                ascending = true;
+            }
+            else {
+                ascending = false;
+
+            }
+
+            return ascending;
+
+        } //end ascending method
+
+
+
 }

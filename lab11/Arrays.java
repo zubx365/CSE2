@@ -1,3 +1,6 @@
+//DONE
+//
+//*****************
 import java.util.Scanner;
 
 public class Arrays {
@@ -46,7 +49,7 @@ public class Arrays {
 
         int sum = 0;
         int temp = 0;
-        
+
         for (int l = 0; l < array.length; l++) {
 
 
@@ -55,15 +58,16 @@ public class Arrays {
         }
         sum = temp;
         System.out.println("The sum is: " + sum);
-        
-        int[] array2 = new int[10];
-        
-        for(int q = 10; q > array.length; q--){
-           
-           array2[10] = array[10-q];
-           temp = array2[q];
-           
+
+        int[] array2 = new int[array.length];
+
+        for (int q = 0, e = 9; q < array.length; q++, e--) {
+
+            array2[q] = array[e];
         }
-        System.out.println(temp);
+
+        for (int a = 0; a < array.length; a++) {
+            System.out.println(array[a] + "     " + array2[a]);
+        }
     }
 }
