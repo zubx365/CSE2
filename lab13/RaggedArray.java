@@ -43,52 +43,6 @@ public class RaggedArray {
             }
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            int[] single1 = new int[55];
-            
-            int x =0;
-            
-            //single1
-            for(int i = 0; i < 4; i++){
-                for(int j = 0; j<5; j++){
-                    single1[x] = rag[i][j];
-                    x++;
-                }
-            }
-            
-            //switching single1
-            //int temp1 = 0;
-            for(int i =0; i < (54); i++){
-                for(int j = i+1; j < (55); j++){
-                    if(single1[i] > single1[j]){
-                        temp1= single1[i];
-                        single1[i] = single1[j];
-                        single1[j] = temp1;
-                    }
-                }
-            }
-            
-            
-            int q = 0;
-            for(int i =0; i < 4; i++){
-                for(int j = 0; j <55; j++){
-                    rag[i][j] = single1[i];
-                    q++;
-                }
-            }
-            
-            
-            
-            
             //print out final sorted array
             for (int i = 0; i < 4; i++) {
                 for (int j = 0; j < rag[i].length; j++) {

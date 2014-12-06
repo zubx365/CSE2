@@ -63,7 +63,7 @@ public class PokerHands {
 
                         } //end if
                     } //end else
-                    break;
+                    break;//breaks out of the for loop to continue to next iteration for faces
                 } //end for loop
 
                 for (int i = 1; i < 9; i += 2) {
@@ -104,7 +104,7 @@ public class PokerHands {
 
         } //end while loop
 
-    showOneHand(hand);
+    showOneHand(hand);  //displays the array hand 
 
 } //end main
 
